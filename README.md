@@ -17,13 +17,13 @@ neural network, ~7 ms per frame.
 
 | Flight over the plantation | Trunk detection in real time | Baseline vs SWA-SLAM |
 |---|---|---|
-| ![flight](media/clip_palm_flight.gif) | ![trunks](media/clip_trunk_detection.gif) | ![trajectories](media/clip_trajectory.gif) |
+| ![flight](media/clip_palm_flight.gif) | ![trunks](media/clip_trunk_detection.gif) | ![trajectories](media/clip_trajectory_v2.gif) |
 
 *Full-resolution versions of all clips are in [`media/`](media/).*
 
 **Both systems live on the same flight — Baseline SLAM (left) vs SWA-SLAM (right), 4x speed:**
 
-![live comparison](media/clip_live_side_by_side.gif)
+![live comparison](media/clip_live_side_by_side_v2.gif)
 
 ## How it works
 
