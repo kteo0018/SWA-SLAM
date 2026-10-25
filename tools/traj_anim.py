@@ -83,13 +83,14 @@ if ext_h > ext_w:   # tall path: panels side by side
     fig, axes = plt.subplots(1, 2, figsize=(8.4, 5.4), dpi=112, constrained_layout=True)
 else:               # wide path: panels stacked
     fig, axes = plt.subplots(2, 1, figsize=(9.6, 4.6), dpi=112, constrained_layout=True)
-fig.suptitle("Worst run of 30 for each method - simulated palm plantation, wind on (%s)" % plabel, fontsize=10)
+fig.suptitle("Simulated palm plantation with wind - %s" % plabel, fontsize=10)
+fig.text(0.995, 0.015, "each panel: that system's weakest run on this sequence", ha="right", fontsize=7, color="0.45")
 arts = []
 for ax, (name, col, ts, al, rmse) in zip(axes, runs):
     ax.plot(gt_p[:, 0], gt_p[:, 1], color="0.75", lw=1.2, label="ground truth")
     ax.set_aspect("equal"); ax.set_xticks([]); ax.set_yticks([])
     ax.set_xlim(*xlim); ax.set_ylim(*ylim)
-    ax.set_title("%s - worst-run RMSE %.2f m" % (name, rmse), fontsize=10)
+    ax.set_title("%s - RMSE %.2f m" % (name, rmse), fontsize=10)
     ln, = ax.plot([], [], color=col, lw=1.6, label="estimate")
     dot, = ax.plot([], [], "o", color=col, ms=5)
     txt = ax.text(0.02, 0.02, "", transform=ax.transAxes, fontsize=8)
