@@ -1,0 +1,8 @@
+/qc_*
+/*.log
+/DONE
+/patch_anim.py
+/trunk_overlay.py
+/traj_anim.py
+/make_videos.sh
+__pycache__/
