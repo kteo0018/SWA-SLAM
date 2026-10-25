@@ -19,7 +19,11 @@ neural network, ~7 ms per frame.
 |---|---|---|
 | ![flight](media/clip_palm_flight.gif) | ![trunks](media/clip_trunk_detection.gif) | ![trajectories](media/clip_trajectory.gif) |
 
-*Full-resolution versions of all three clips are in [`media/`](media/).*
+*Full-resolution versions of all clips are in [`media/`](media/).*
+
+**Both systems live on the same flight — Baseline SLAM (left) vs SWA-SLAM (right), 4x speed:**
+
+![live comparison](media/clip_live_side_by_side.gif)
 
 ## How it works
 
@@ -59,7 +63,7 @@ the fronds coming. The trunk prior is what keeps SWA-SLAM alive.
 |---|---|
 | [`media/01_camera_feed.mp4`](media/01_camera_feed.mp4) | The raw onboard view: wind-blown, repetitive canopy at 60 fps |
 | [`media/02_trunk_detection.mp4`](media/02_trunk_detection.mp4) | The trunk extractor live: detected trunks (red), stability boundary (yellow), canopy-ring check (cyan) |
-| [`media/03_trajectory_comparison.mp4`](media/03_trajectory_comparison.mp4) | Side-by-side trajectory against ground truth, baseline vs SWA-SLAM |
+| [`media/03_trajectory_comparison.mp4`](media/03_trajectory_comparison.mp4) | Trajectory against ground truth: each method's worst run out of 30 on the hardest flight path |
 | [`media/04_baseline_live_view.mp4`](media/04_baseline_live_view.mp4) | The baseline system running live (4x speed): feature tracking on the left, map and estimated trajectory on the right |
 | [`media/05_swaslam_live_view.mp4`](media/05_swaslam_live_view.mp4) | SWA-SLAM on the same flight (4x speed): stable tracking through the canopy and a continuous trajectory |
 
