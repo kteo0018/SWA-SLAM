@@ -60,6 +60,8 @@ the fronds coming. The trunk prior is what keeps SWA-SLAM alive.
 | [`media/01_camera_feed.mp4`](media/01_camera_feed.mp4) | The raw onboard view: wind-blown, repetitive canopy at 60 fps |
 | [`media/02_trunk_detection.mp4`](media/02_trunk_detection.mp4) | The trunk extractor live: detected trunks (red), stability boundary (yellow), canopy-ring check (cyan) |
 | [`media/03_trajectory_comparison.mp4`](media/03_trajectory_comparison.mp4) | Side-by-side trajectory against ground truth, baseline vs SWA-SLAM |
+| [`media/04_baseline_live_view.mp4`](media/04_baseline_live_view.mp4) | The baseline system running live (4x speed): feature tracking on the left, map and estimated trajectory on the right |
+| [`media/05_swaslam_live_view.mp4`](media/05_swaslam_live_view.mp4) | SWA-SLAM on the same flight (4x speed): stable tracking through the canopy and a continuous trajectory |
 
 ## Status and availability
 
